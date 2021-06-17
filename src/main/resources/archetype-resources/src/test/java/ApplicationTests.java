@@ -23,8 +23,8 @@
  */
 package $package;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * Simple Application unit tests.
@@ -34,7 +34,7 @@ public class ApplicationTests {
   @Test
   public void shouldReturnTheSameValuePassedInConstructor() {
     String javaApp = "javaApp";
-    Assert.assertEquals(javaApp, new Application(javaApp).name());
+    Assertions.assertEquals(javaApp, new Application(javaApp).name());
   }
 
 }

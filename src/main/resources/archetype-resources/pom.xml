@@ -32,7 +32,7 @@
   <properties>
     <version.utf>UTF-8</version.utf>
     <version.jdk>1.8</version.jdk>
-    <version.junit>4.13.2</version.junit>
+    <version.junit>5.7.2</version.junit>
     <project.build.sourceEncoding>${version.utf}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${version.utf}</project.reporting.outputEncoding>
     <maven.compiler.source>${version.jdk}</maven.compiler.source>
@@ -40,8 +40,14 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${version.junit}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
       <version>${version.junit}</version>
       <scope>test</scope>
     </dependency>
