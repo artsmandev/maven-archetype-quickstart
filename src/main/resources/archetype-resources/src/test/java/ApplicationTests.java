@@ -29,10 +29,10 @@ import org.junit.jupiter.api.Test;
 /**
  * Simple Application unit tests.
  */
-public class ApplicationTests {
+class ApplicationTests {
 
   @Test
-  public void shouldReturnTheSameValuePassedInConstructor() {
+  void shouldReturnTheSameValuePassedInConstructor() {
     String javaApp = "javaApp";
     Assertions.assertEquals(javaApp, new Application(javaApp).name());
   }
