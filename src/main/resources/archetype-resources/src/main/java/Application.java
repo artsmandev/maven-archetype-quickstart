@@ -24,11 +24,10 @@
 package $package;
 
 /**
- * Simple Application class.
+ * Simple Application class
  */
 class Application {
-
-  private String name;
+  private final String name;
 
   Application(String name) {
     this.name = name;
@@ -37,5 +36,4 @@ class Application {
   String name() {
     return this.name;
   }
-
 }

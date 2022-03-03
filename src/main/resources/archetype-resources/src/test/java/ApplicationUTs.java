@@ -23,18 +23,19 @@
  */
 package $package;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 /**
- * Simple Application unit tests.
+ * Simple Application unit tests
  */
-public class ApplicationTests {
-
+class ApplicationUTs {
+  @DisplayName("Should return the same value passed in constructor")
   @Test
-  public void shouldReturnTheSameValuePassedInConstructor() {
+  void shouldReturnTheSameValuePassedInConstructor() {
     String javaApp = "javaApp";
-    Assert.assertEquals(javaApp, new Application(javaApp).name());
+    Assertions.assertEquals(javaApp, new Application(javaApp).name());
   }
-
 }
+
