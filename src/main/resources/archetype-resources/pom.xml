@@ -32,17 +32,33 @@
   <properties>
     <version.utf>UTF-8</version.utf>
     <version.jdk>1.8</version.jdk>
-    <version.junit>4.13.2</version.junit>
+    <version.junit>5.8.2</version.junit>
     <project.build.sourceEncoding>${version.utf}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${version.utf}</project.reporting.outputEncoding>
     <maven.compiler.source>${version.jdk}</maven.compiler.source>
     <maven.compiler.target>${version.jdk}</maven.compiler.target>
   </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${version.junit}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>${version.junit}</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apiguardian</groupId>
+          <artifactId>apiguardian-api</artifactId>
+        </exclusion>
+      </exclusions>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -59,15 +75,20 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.10.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.0.0-M5</version>
+          <configuration>
+            <includes>
+              <include>*UTs.java</include>
+            </includes>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.2.0</version>
+          <version>3.2.2</version>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
@@ -75,9 +96,30 @@
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.0.0-M1</version>
+          <version>3.0.0-M2</version>
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.7</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>Unit Tests</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 </project>
