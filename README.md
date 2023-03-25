@@ -1,6 +1,9 @@
 ### This is a simple Maven Archetype Quickstart.
 
 ---
+Maven Archetype Plugin ([3.2.1](https://maven.apache.org/archetype/maven-archetype-plugin/index.html))
+
+---
 Core Plugins:
   - Clean ([3.2.0](https://maven.apache.org/plugins/maven-clean-plugin/plugin-info.html))
   - Resources ([3.3.0](https://maven.apache.org/plugins/maven-resources-plugin/plugin-info.html))
