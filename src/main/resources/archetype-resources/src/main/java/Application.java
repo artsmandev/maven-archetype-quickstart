@@ -4,13 +4,13 @@ package $package;
  * Simple Application class
  */
 class Application {
-  private final String name;
+	private final String name;
 
-  Application(String name) {
-    this.name = name;
-  }
+	Application(String name) {
+		this.name = name;
+	}
 
-  String name() {
-    return this.name;
-  }
+	String name() {
+		return this.name;
+	}
 }
