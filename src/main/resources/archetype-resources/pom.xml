@@ -144,6 +144,10 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
+				<configuration>
+					<dataFile>${project.reporting.outputDirectory}/jacoco/bin/jacoco.exec</dataFile>
+					<destFile>${project.reporting.outputDirectory}/jacoco/bin/jacoco.exec</destFile>
+				</configuration>
 				<executions>
 					<execution>
 						<id>Prepares JaCoCo's Agent</id>
