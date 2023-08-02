@@ -26,6 +26,7 @@
 		<maven.site-plugin.version>4.0.0-M8</maven.site-plugin.version>
 		<maven.build-helper-plugin.version>3.4.0</maven.build-helper-plugin.version>
 		<maven.jacoco-plugin.version>0.8.10</maven.jacoco-plugin.version>
+		<maven.sonar-plugin.version>3.9.1.2184</maven.sonar-plugin.version>
 		<version.junit>5.9.2</version.junit>
 	</properties>
 	<dependencyManagement>
@@ -109,6 +110,11 @@
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>
 					<version>${maven.jacoco-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.sonarsource.scanner.maven</groupId>
+					<artifactId>sonar-maven-plugin</artifactId>
+					<version>${maven.sonar-plugin.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
