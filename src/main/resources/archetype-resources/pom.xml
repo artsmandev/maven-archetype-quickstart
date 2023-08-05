@@ -10,7 +10,7 @@
 		<utf.version>UTF-8</utf.version>
 		<project.build.sourceEncoding>${utf.version}</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>${utf.version}</project.reporting.outputEncoding>
-		<jdk.version>17</jdk.version>
+		<jdk.version>20</jdk.version>
 		<maven.compiler.source>${jdk.version}</maven.compiler.source>
 		<maven.compiler.target>${jdk.version}</maven.compiler.target>
 		<maven.archetype-packaging.version>3.2.1</maven.archetype-packaging.version>
