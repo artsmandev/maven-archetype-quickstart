@@ -19,4 +19,5 @@ Core Plugins:\
 ---
 Other Plugins:\
 	- Build Helper [(3.3.0)](https://www.mojohaus.org/build-helper-maven-plugin/index.html)\
+	- JUnit [(5.10.0)] (https://junit.org/junit5/)\
 	- JaCoCo [(0.8.8)](https://www.jacoco.org/jacoco/trunk/doc/)
