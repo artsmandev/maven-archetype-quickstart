@@ -6,6 +6,13 @@
 	<groupId>${groupId}</groupId>
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
+	<developers>
+	<developer>
+		<name>Bruno Andrade</name>
+		<email>bruno@artsman.dev</email>
+		<organization>Artsman Developer</organization>
+		<organizationUrl>https://artsman.dev</organizationUrl>
+	</developer>
 	<properties>
 		<utf.version>UTF-8</utf.version>
 		<project.build.sourceEncoding>${utf.version}</project.build.sourceEncoding>
