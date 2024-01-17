@@ -5,7 +5,7 @@ Maven Archetype Plugin ([3.2.1](https://maven.apache.org/archetype/maven-archety
 
 ---
 Core Plugins:\
-	- Dependency ([3.6.1](https://maven.apache.org/plugins/maven-dependency-plugin/index.html)\
+	- Dependency ([3.6.1](https://maven.apache.org/plugins/maven-dependency-plugin/index.html))\
 	- Clean ([3.3.2](https://maven.apache.org/plugins/maven-clean-plugin/plugin-info.html))\
 	- Resources ([3.3.1](https://maven.apache.org/plugins/maven-resources-plugin/plugin-info.html))\
 	- Compiler ([3.12.1](https://maven.apache.org/plugins/maven-compiler-plugin/plugin-info.html))\
