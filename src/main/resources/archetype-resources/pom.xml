@@ -38,7 +38,7 @@
 		<maven.build-helper-plugin.version>3.5.0</maven.build-helper-plugin.version>
 		<maven.jacoco-plugin.version>0.8.11</maven.jacoco-plugin.version>
 		<maven.sonar-plugin.version>3.10.0.2594</maven.sonar-plugin.version>
-		<version.junit>5.10.1</version.junit>
+		<version.junit>5.11.0-M2</version.junit>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
