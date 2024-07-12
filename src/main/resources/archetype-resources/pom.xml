@@ -6,6 +6,12 @@
 	<groupId>${groupId}</groupId>
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
+	<licenses>
+		<license>
+			<name>The MIT License</name>
+			<url>https://www.mit.edu/~amini/LICENSE.md</url>
+		</license>
+	</licenses>
 	<developers>
 		<developer>
 			<name>Bruno Andrade</name>
